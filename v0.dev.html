@@ -1,0 +1,44 @@
+
+    <div className="flex min-h-screen flex-col items-center justify-center bg-background">
+      <Card className="w-full max-w-md">
+        <CardHeader>
+          <CardTitle className="text-2xl">Registro</CardTitle>
+          <CardDescription>Ingresa tus datos para crear una cuenta.</CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <div className="space-y-2">
+            <Label htmlFor="name">Nombre</Label>
+            <Input id="name" placeholder="Ingresa tu nombre" required />
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="email">Correo electrónico</Label>
+            <Input id="email" type="email" placeholder="example@email.com" required />
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="password">Contraseña</Label>
+            <Input id="password" type="password" required />
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="age">Edad</Label>
+            <Input id="age" type="number" placeholder="Ingresa tu edad" required />
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="birthYear">Año de nacimiento</Label>
+            <Input id="birthYear" type="number" placeholder="Ingresa tu año de nacimiento" required />
+          </div>
+        </CardContent>
+        <CardFooter>
+          <Button className="w-full">Registrarse</Button>
+        </CardFooter>
+      </Card>
+      <div className="mt-8 text-center">
+        <p className="text-muted-foreground">
+          ¿Ya tienes una cuenta?{" "}
+          <Link href="#" className="underline" prefetch={false}>
+            Inicia sesión
+          </Link>
+        </p>
+      </div>
+    </div>
+  )
+}
